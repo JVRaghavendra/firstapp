@@ -1,0 +1,21 @@
+<p>directives</p>
+
+<h1 *ngIf="show">This is Directives</h1>
+<hr>
+<table border="1">
+    <tr *ngFor="let m of mobiles">
+        <td>{{m}}</td>
+    </tr>
+</table>
+<hr>
+<div [ngSwitch]="op">
+
+  <div *ngSwitchCase=" '+' ">{{num1}}+{{num2}}={{num1+num2}}</div>
+  <div *ngSwitchCase=" '-' ">{{num1}}-{{num2}}={{num1-num2}}</div>
+  <div *ngSwitchCase=" '/' ">{{num1}}/{{num2}}={{num1/num2}}</div>
+  <div *ngSwitchCase=" '*' ">{{num1}}*{{num2}}={{num1*num2}}</div>
+  <div *ngSwitchDefault=" '+' ">{{num1}}+{{num2}}={{num1+num2}}</div>
+
+</div>
+
+
